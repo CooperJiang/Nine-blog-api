@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: #eee;
+    padding: 15px;
+    width: 550px;
+  }
+  a{
+    color: #5ead22;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+  }
+</style>
+<body>
+  <div class="container">
+    <h3>恭喜、成功激活了您的账户</h3>
+    <p><%= data.nickname %> 欢迎加入小九的BLOG、你是本站的第 <%= data.count %>位用户、<a href="https://jiangly.com">点击前往登录</a></p>
+  </div>
+</body>
+</html>
